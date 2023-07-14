@@ -3,11 +3,17 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { PneumoContextProvider } from './Context/PneumoContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+     <PneumoContextProvider>
+        <App/>  
+      </PneumoContextProvider>
+      
+    
+    
   </React.StrictMode>
 );
 
